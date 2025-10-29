@@ -4,7 +4,7 @@ import '../../src/App.css'
 const AllList = () => {
   const [data,setData] = React.useState([]);
   React.useEffect(()=>{
-    fetch('http://localhost:5500/api/alltasks')
+    fetch('https://task-manage-1-uawb.onrender.com/api/alltasks')
     .then(res=>res.json())  
     .then(result=>{
       setData(result.tasks);
