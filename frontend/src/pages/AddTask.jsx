@@ -11,7 +11,7 @@ export default function AddTask() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:5500/api/addtask', {
+    const response = await fetch('https://task-manage-1-uawb.onrender.com/api/addtask', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
